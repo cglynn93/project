@@ -1,0 +1,72 @@
+.navbar-brand{
+  font-size: 200%;
+  position: relative;
+  width: 150px;
+  left: 15px;
+  background-size: contain;
+}
+.navbar{
+  font-family: Georgia;
+  font-size: 200%;
+}
+
+.carousel-inner{
+  width: 100%;
+	height: 560px;
+}
+
+.carousel-header{
+	font-weight: bold;
+}
+
+.carousel-description{
+	font-style: italic;
+}
+
+.carousel-caption{
+	font-family: Georgia;
+	font-size: 200%;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+.post-title{
+	font-family: Georgia;
+}
+
+.post-description{
+	font-family: Georgia;
+}
+
+.column-blogpost{
+	width: 50%;
+	text-align: center;
+}
+
+.row-food{
+	padding-left: 30px;
+}
+
+.heading-food{
+	font-family: Georgia;
+	font-style: italic;
+}
+
+.description-food{
+	font-family: Georgia;
+}
+
+.subheading-food{
+  font-family:Georgia;
+  text-align: center;
+}
+
+.card-heading{
+	font-family: Georgia;
+}
+
+.card-text{
+	font-family: Georgia;
+}
