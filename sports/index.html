@@ -2,93 +2,138 @@
 <html>
 	<head>
 		<title>From Brazil to Dublin</title>
+
+		<!--Bootstrap link-->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+		<!--Stylesheet link-->
 		<link rel="stylesheet" href="../style/style.css"/>
+
 	</head>
 	<body>
+
+		<!--Javascript link-->
+		<script src="../script.js"></script>
+
+		<!--Navigation bar-->
     <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html"><img src="../images/Flag-Brazil.png" width="80" height="60"> From Brazil to Dublin <img src="../images/Ireland-Flag.png" width="80" height="55"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../food/index.html">Food</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../music/index.html">Nightlife</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../sports/index.html">Sports</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../beauty/index.html">Beauty</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="row-sports">
-    <h1 class="heading-sports">Food</h1>
-      <p class="description-sports">In this section we will look at Brazilian sports classes you can find in Dublin.</p>
-  </div>
-  <div class="album py-5 bg-light">
-    <div class="container">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-none">
-            <svg width="100%" height="225"><image href="../images/Wigwam2.png" width="100%" height="225"></svg>
-            <div class="card-body">
-              <h3 class="card-heading">Wigwam</h3>
-              <p class="card-text">From bottomless brunch to a la carte, the Brazilian inspired mouth watering dishes are not to be missed. The cocktails are also divine.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <form action="https://www.wigwamdublin.com/">
-                  <button type="submit" class="btn btn-sm btn-outline-secondary">Website</button>
-                  </form>
-                  <form action="https://www.google.com/maps/place/Wigwam/@53.3478921,-6.264497,17z/data=!3m1!4b1!4m5!3m4!1s0x48670e8378b543e3:0x4ae76b7fd4a3378c!8m2!3d53.3478889!4d-6.2623083">
-                  <button type="submit" class="btn btn-sm btn-outline-secondary">Location</button>
-                  </form>
-                </div>
-                <small class="text-muted">Vegan friendly</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg width="100%" height="225"><image href="../images/bah33.png" width="100%" height="225"></svg>
-            <div class="card-body">
-              <h3 class="card-heading">BAH33</h3>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Website</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Location</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-          <svg width="100%" height="225"><image href="../images/Wasabi.png" width="100%" height="225"></svg>
-            <div class="card-body">
-              <h3 class="card-heading">Wasabi Bar & Grill</h3>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Website</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Location</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
+    	<div class="container-fluid">
+				<!--Logo links back to homepage when pressed-->
+      	<a class="navbar-brand" href="../index.html"><img src="../images/Flag-Brazil.png" width="80" height="60"> From Brazil to Dublin <img src="../images/Ireland-Flag.png" width="80" height="55"></a>
+      		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        		<span class="navbar-toggler-icon"></span>
+      		</button>
+						<!--Navigation items link to corresponding pages-->
+      			<div class="collapse navbar-collapse" id="navbarNav">
+        			<ul class="navbar-nav ms-auto">
+          			<li class="nav-item">
+            			<a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          			</li>
+          			<li class="nav-item">
+            			<a class="nav-link" href="..food/index.html">Food</a>
+          			</li>
+          			<li class="nav-item">
+            			<a class="nav-link" href="../nightlife/index.html">Nightlife</a>
+          			</li>
+          			<li class="nav-item">
+            			<a class="nav-link" href="../sports/index.html">Sports</a>
+          			</li>
+          			<li class="nav-item">
+            			<a class="nav-link" href="../beauty/index.html">Beauty</a>
+          			</li>
+        			</ul>
+      			</div>
+    	</div>
+  	</nav>
+
+		<!--Heading-->
+		<div class="row-heading">
+			<h1 class="heading-one">Sports</h1>
+				<!--Paragraph describing heading-->
+				<p class="description-heading">In this section you will discover the various types of Brazilian sports classes you can find in Dublin City.</p>
+		</div>
+
+		<!--Container-->
+		<div class="album py-5 bg-none">
+			<div class="container">
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+					<!--Div 1-->
+					<div class="col">
+						<div class="card shadow-none">
+							<svg width="100%" height="225"><image href="../images/capoeiraa.png" width="100%"></svg>
+								<div class="card-body">
+									<!--Heading within div 1-->
+									<h3 class="card-heading">Dublin Capoeira</h3>
+										<!--Descriptive paragraph-->
+										<p class="card-text">Capoeira is a Brazilian martial art that combines elements of dance, acrobatics and music. Caters to all levels and ages.</p>
+											<div class="d-flex justify-content-between align-items-center">
+												<!--Buttons for external website and google maps location-->
+												<div class="btn-toolbar">
+													<!--Website-->
+													<button type="button" class="btn" onclick="clickCapoeiraWebsite()">Website</button>
+													<div class="divider"></div>
+													<!--Location-->
+													<button type="button" class="btn" onclick="clickCapoeiraLocation()">Location</button>
+												</div>
+											</div>
+								</div>
+						</div>
+					</div>
+					<!--Div 2-->
+					<div class="col">
+						<div class="card shadow-sm">
+							<svg width="100%" height="225"><image href="../images/jsbjj.png" width="100%"></svg>
+								<div class="card-body">
+									<!--Heading within div 2-->
+									<h3 class="card-heading">JSBJJ</h3>
+										<!--Descriptive paragraph-->
+										<p class="card-text">Brazilian Jiu-Jitsu is a martial art and combat sport based on ground fighting and submission holds. Book your free trial class now! </p>
+											<div class="d-flex justify-content-between align-items-center">
+												<!--Buttons for external website and google maps location-->
+												<div class="btn-toolbar">
+													<!--Website-->
+													<button type="button" class="btn" onclick="clickJSBJJWebsite()">Website</button>
+													<div class="divider"></div>
+													<!--Location-->
+													<button type="button" class="btn" onclick="clickJSBJJLocation()">Location</button>
+												</div>
+											</div>
+								</div>
+						</div>
+					</div>
+					<!--Div 3-->
+					<div class="col">
+						<div class="card shadow-sm">
+							<svg width="100%" height="225"><image href="../images/vieira.jpg" width="100%" height="100%"></svg>
+								<div class="card-body">
+									<!--Heading within div 2-->
+									<h3 class="card-heading">Vieira High Performance</h3>
+										<!--Descriptive paragraph-->
+										<p class="card-text">This is a place where you can get in shape and make friends! The Brazilian teachers offer ElectroStimulation Training and CrossTraining. </p>
+											<div class="d-flex justify-content-between align-items-center">
+												<!--Buttons for external website and google maps location-->
+												<div class="btn-toolbar">
+													<!--Website-->
+													<button type="button" class="btn" onclick="clickVieiraWebsite()">Website</button>
+													<div class="divider"></div>
+													<!--Location-->
+													<button type="button" class="btn" onclick="clickVieiraLocation()">Location</button>
+												</div>
+											</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Footer-->
+		<footer class="footer bg-light text-center text-lg-start">
+			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+							© 2021 Copyright:
+			</div>
+		</footer>
+
+	</body>
+	</html>

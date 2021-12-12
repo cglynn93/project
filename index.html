@@ -2,146 +2,177 @@
 <html>
 	<head>
 		<title>From Brazil to Dublin</title>
+
 		<!--Bootstrap link-->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 		<!--Stylesheet link-->
 		<link rel="stylesheet" href="style/style.css"/>
+
 	</head>
 	<body>
+
 		<!--Javascript link-->
 		<script src="script.js"></script>
+
 		<!--Navigation bar-->
     <nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container-fluid">
+				<!--Logo links back to homepage when clicked-->
+				<a class="navbar-brand" href="index.html"><img src="images/Flag-Brazil.png" width="80" height="60"> From Brazil to Dublin <img src="images/Ireland-Flag.png" width="80" height="55"></a>
+      		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      			<span class="navbar-toggler-icon"></span>
+      		</button>
+					<!--Navbar items-->
+    			<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item">
+            		<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          		</li>
+          		<li class="nav-item">
+            		<a class="nav-link" href="food/index.html">Food</a>
+          		</li>
+          		<li class="nav-item">
+            		<a class="nav-link" href="nightlife/index.html" onclick="ageprompt()">Nightlife</a>
+          		</li>
+          		<li class="nav-item">
+            		<a class="nav-link" href="sports/index.html">Sports</a>
+          		</li>
+          		<li class="nav-item">
+            		<a class="nav-link" href="beauty/index.html">Beauty</a>
+          		</li>
+        		</ul>
+					</div>
+			</div>
+		</nav>
 
-    <div class="container-fluid">
+		<!--Carousel-->
+		<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+		  	<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		  	<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		  	<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  	<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+			</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<!--Clicking image sends user to corresponding page-->
+						<a href="food/index.html"><img src="images/wigwam.png" class="d-block w-100" alt="photos of food and drink available at Wigwam"></a>
+							<div class="carousel-caption">
+	        			<h1 class="carousel-header">Food</h1>
+									<!--Descriptive text for carousel item-->
+	        				<p class="carousel-description">Delicious meals brought to you by some of Brazil's finest chefs.</p>
+							</div>
+					</div>
+					<div class="carousel-item">
+						<!--Clicking image sends user to corresponding page-->
+						<a href="nightlife/index.html"><img src="images/nightlife.png" class="d-block w-100" alt="photo of crowd live music"></a>
+							<div class="carousel-caption">
+								<h1 class="carousel-header" onclick="ageprompt()">Nightlife</h1>
+									<!--Descriptive text for carousel item-->
+									<p class="carousel-description">Whether you're into Funk or Samba, there are lots of places for you to enjoy Brazilian music in Dublin.</p>
+							</div>
+					</div>
+					<div class="carousel-item">
+						<!--Clicking image sends user to corresponding page-->
+						<a href="sports/index.html"><img src="images/bjj.png" class="d-block w-100" alt="brazilian jiu jitsu class members"></a>
+							<div class="carousel-caption">
+								<h1 class="carousel-header">Sports</h1>
+									<!--Descriptive text for carousel item-->
+									<p class="carousel-description">Ever thought about taking up a new activity? Now is your chance to explore some Brazilian sports available here in Dublin!</p>
+							</div>
+					</div>
+					<div class="carousel-item">
+						<!--Clicking image sends user to corresponding page-->
+						<a href="beauty/index.html"><img src="images/beauty3.png" class="d-block w-100" alt="beauty salon room"></a>
+							<div class="carousel-caption">
+								<h1 class="carousel-header">Beauty</h1>
+									<!--Descriptive text for carousel item-->
+									<p class="carousel-description">Treat yourself, you deserve it.</p>
+							</div>
+					</div>
+				</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+	  		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	  		<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+	  		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+	  		<span class="visually-hidden">Next</span>
+			</button>
+		</div>
 
-      <a class="navbar-brand" href="index.html"><img src="images/Flag-Brazil.png" width="80" height="60"> From Brazil to Dublin <img src="images/Ireland-Flag.png" width="80" height="55"></a>
+		<br>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-
-        <ul class="navbar-nav ms-auto">
-
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="food/index.html">Food</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="nightlife/index.html" onclick="ageprompt()">Nightlife</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="sports/index.html">Sports</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="beauty/index.html">Beauty</a>
-          </li>
-
-        </ul>
-
+		<!--Blogposts-->
+		<section>
+			<div class="album py-5 bg-light">
+				<div class="container">
+					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2">
+						<!--Blogpost 1-->
+						<div class="col">
+							<div class="card">
+								<div class="card-body">
+									<article>
+										<!--Blogpost title-->
+										<h3 class="card-heading text-center"><a href="food/index.html">Wigwam is back in full swing!</a></h3>
+											<!--Blogpost descriptive text-->
+											<p class="card-text text-center">Delicious food and deadly DJs</p>
+									</article>
+                </div>
+              </div>
+            </div>
+						<!--Blogpost 2-->
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+									<article>
+										<!--Blogpost title-->
+                    <h3 class="card-heading text-center"><a href="music/index.html">Are you as excited as us about Dicey's reopening?</a></h3>
+											<!--Blogpost descriptive text-->
+                    	<p class="card-text text-center">Best places to get down to some Funk</p>
+									</article>
+                </div>
+              </div>
+            </div>
+						<!--Blogpost 3-->
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+									<article>
+										<!--Blogpost title-->
+                    <h3 class="card-heading text-center"><a href="sports/index.html">Martial arts with a Brazilian twist</a></h3>
+											<!--Blogpost descriptive text-->
+											<p class="card-text text-center">From Capoeira to BJJ, there are many classes to check out in Dublin</p>
+									</article>
+                </div>
+              </div>
+            </div>
+						<!--Blogpost 4-->
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+									<article>
+										<!--Blogpost title-->
+                  	<h3 class="card-heading text-center"><a href="beauty/index.html">Have you ever heard of Renata Franca?</a></h3>
+											<!--Blogpost descriptive text-->
+                      <p class="card-text text-center">Top Brazilian beauty salons in Dublin City</p>
+									</article>
+                </div>
+              </div>
+            </div>
+          </div>
+      	</div>
       </div>
+		</section>
 
-    </div>
-		
-	</nav>
-	<!--Carousel-->
-	<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-
-		<div class="carousel-indicators">
-		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-		</div>
-
-	<div class="carousel-inner">
-
-	  <div class="carousel-item active">
-	    <a href="food/index.html"><img src="images/wigwam.png" class="d-block w-100" alt="photos of food and drink available at Wigwam"></a>
-	      <div class="carousel-caption">
-	        <h1 class="carousel-header">Food</h1>
-	        <p class="carousel-description">Delicious meals brought to you by some of Brazil's finest chefs.</p>
-	      </div>
-		</div>
-
-		<div class="carousel-item">
-			<a href="music/index.html"><img src="images/nightlife.png" class="d-block w-100" alt="photo of crowd live music"></a>
-				<div class="carousel-caption">
-					<h1 class="carousel-header" onclick="ageprompt()">Nightlife</h1>
-					<p class="carousel-description">Whether you're into Funk or Samba, there are lots of places for you to enjoy Brazilian music in Dublin.</p>
-				</div>
-		</div>
-
-	<div class="carousel-item">
-		<a href="sports/index.html"><img src="images/bjj.png" class="d-block w-100" alt="brazilian jiu jitsu class members"></a>
-			<div class="carousel-caption">
-				<h1 class="carousel-header">Sports</h1>
-					<p class="carousel-description">Ever thought about taking up a new activity? Now is your chance to explore some Brazilian sports available here in Dublin!</p>
-			</div>
-		</div>
-
-	<div class="carousel-item">
-		<a href="beauty/index.html"><img src="images/beauty3.png" class="d-block w-100" alt="beauty salon room"></a>
-			<div class="carousel-caption">
-				<h1 class="carousel-header">Beauty</h1>
-					<p class="carousel-description">Treat yourself, you deserve it.</p>
-				</div>
-			</div>
-
-		</div>
-
-	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	  <span class="visually-hidden">Previous</span>
-	</button>
-
-	<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-	  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	  <span class="visually-hidden">Next</span>
-	</button>
-
-</div>
-
-<br>
-	<!--Blogposts-->
-	<div class="row">
-
-			<div class="column-blogpost">
-				<a href="food/index.html"><h3 class="post-title">Wigwam is back in full swing!</h3></a>
-					<p class="post-description">Delicious food and deadly DJs</p>
-			</div>
-
-			<div class="column-blogpost">
-				<a href="music/index.html"><h3 class="post-title">Are you as excited as us about Dicey's reopening?</h3></a>
-					<p class="post-description">Best places to get down to some Funk</p>
-			</div>
-
-	</div>
-
-	<br>
-
-		<div class="row">
-
-			<div class="column-blogpost">
-				<a href="sports/index.html"><h3 class="post-title">Martial arts with a Brazilian twist</h3></a>
-					<p class="post-description">From Capoeira to BJJ, there are many classes to check out in Dublin</p>
-			</div>
-
-			<div class="column-blogpost">
-				<a href="beauty/index.html"><h3 class="post-title">Have you ever heard of the Renata Franca method?</h3></a>
-					<p class="post-description">Top Brazilian beauty salons in Dublin City</p>
-			</div>
-
-		</div>
+		<!--Footer-->
+		<footer class="footer bg-light text-center text-lg-start">
+			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+    	</div>
+  	</footer>
 
 	</body>
 </html>

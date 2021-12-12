@@ -45,20 +45,20 @@
 	text-align: center;
 }
 
-.row-food{
+.row-heading{
 	padding-left: 30px;
 }
 
-.heading-food{
+.heading-one{
 	font-family: Georgia;
 	font-style: italic;
 }
 
-.description-food{
+.description-heading{
 	font-family: Georgia;
 }
 
-.subheading-food{
+.subheading-one{
   font-family:Georgia;
   text-align: center;
 }
@@ -69,4 +69,19 @@
 
 .card-text{
 	font-family: Georgia;
+}
+
+.btn{
+  border-color: black;
+  font-family: Georgia;
+}
+
+.divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}
+
+footer{
+  font-family: Georgia;
 }
