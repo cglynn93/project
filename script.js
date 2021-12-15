@@ -92,6 +92,14 @@ function clickDiceysLocation(){
   window.open("https://www.google.com/maps/place/Dicey's+Garden+Club/@53.3358671,-6.2657456,17z/data=!3m1!4b1!4m5!3m4!1s0x48670e9fbd59debb:0x48ff9c9781cd8e3d!8m2!3d53.3358504!4d-6.2635152",'_blank');
 }
 
+function clickWoolshedWebsite(){
+  window.open("http://www.woolshedbaa.com/dublin/",'_blank');
+}
+
+function clickWoolshedLocation(){
+  window.open("https://www.google.com/maps/place/Woolshed+Baa+%26+Grill/@53.3502929,-6.2695521,17z/data=!3m1!4b1!4m5!3m4!1s0x48670e8223fcf711:0xd85f9edea71a706b!8m2!3d53.3502653!4d-6.2673395",'_blank');
+}
+
 function clickTramlineWebsite(){
   window.open('https://tramline.ie/','_blank');
 }
