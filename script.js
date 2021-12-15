@@ -1,4 +1,3 @@
-
 function ageprompt(){
   var r = confirm("Are you over 18?");
   if (r == false){
@@ -8,6 +7,33 @@ function ageprompt(){
   else{
     window.open('nightlife/index.html');
   }
+}
+
+function agepromptAgain(){
+  var a = confirm("Are you over 18?");
+  if (a == false){
+    alert("Sorry, you must be over 18 to access this page!");
+    window.open('../index.html');
+  }
+  else{
+    window.open('../nightlife/index.html');
+  }
+}
+
+function clickFood(){
+  window.open('food/index.html');
+}
+
+function clickNightlife(){
+  window.open('nightlife/index.html');
+}
+
+function clickSports(){
+  window.open('sports/index.html');
+}
+
+function clickBeauty(){
+  window.open('beauty/index.html');
 }
 
 function clickWigwamWebsite(){
