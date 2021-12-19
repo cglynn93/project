@@ -155,3 +155,101 @@ function clickBelezaWebsite(){
 function clickBelezaLocation(){
   window.open("https://www.google.com/maps/place/Beleza+Pura+by+Camila+Marc/@53.3525263,-6.2665406,17z/data=!3m1!4b1!4m5!3m4!1s0x48670e8287497abb:0xbc18608258c7fe7f!8m2!3d53.3525491!4d-6.2643025",'_blank');
 }
+
+function nameChecker(){
+  var name = document.getElementById("userName").value;
+  var specialChars = "!@#$£%&*()'+,-./:;<=>?[]^_`{|}";
+  var invalidUserName = false;
+  var numbers = "0123456789";
+  var invalidNumbers = false;
+
+  for (let i = 0; i < name.length; i++) {
+    if(specialChars.includes(name.charAt(i))) {
+      invalidUserName = true;
+    }
+
+    else if(numbers.includes(name.charAt(i))) {
+      invalidNumbers = true;
+    }
+  }
+
+    if(invalidUserName) {
+      alert("Username cannot contain special characters");
+    }
+
+    else if(invalidNumbers) {
+      alert("Username cannot contain numbers");
+    }
+
+    else {
+			alert("Username OK");
+    }
+  }
+
+  function surnameChecker(){
+    var surname = document.getElementById("surName").value;
+    var specialChars = "!@#£$%&*()'+,-./:;<=>?[]^_`{|}";
+    var invalidSurName = false;
+    var numbers = "0123456789";
+    var invalidNumbers = false;
+
+    for (let i = 0; i < surname.length; i++) {
+      if(specialChars.includes(surname.charAt(i))) {
+        invalidSurName = true;
+      }
+
+      else if(numbers.includes(surname.charAt(i))) {
+        invalidNumbers = true;
+      }
+    }
+
+      if(invalidSurName) {
+        alert("Surname cannot contain special characters");
+      }
+
+      else if(invalidNumbers) {
+        alert("Surname cannot contain numbers");
+      }
+
+      else {
+  			alert("Surname OK");
+      }
+    }
+
+
+  function emailChecker(){
+    var email = document.getElementById("userEmail").value;
+    var emailChars="@.";
+    var invalidEmail = true;
+    var specialCharacters = "!#£$%&*()'+,-/:;<=>?[]^_`{|}";
+    var invalidChars = false;
+
+    for (let i = 0; i < email.length; i++) {
+      if(emailChars.includes(email.charAt(i))) {
+        invalidEmail = false;
+      }
+
+      else if(specialCharacters.includes(email.charAt(i))) {
+        invalidChars = true;
+      }
+    }
+      if(invalidEmail) {
+        alert("Invalid format");
+      }
+
+      else if(invalidChars) {
+        alert("Invalid format");
+      }
+
+      else {
+    		alert("Email OK");
+      }
+    }
+
+  function formChecker(){
+    event.preventDefault();
+    var name=document.getElementById("userName").value;
+    var surname=document.getElementById("surName").value;
+    var email=document.getElementById("userEmail").value;
+    alert(name+" "+surname+", thank you for subscribing to our newsletter. We will be in touch via "+email+" shortly.")
+}

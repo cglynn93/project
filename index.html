@@ -36,7 +36,7 @@
             		<a class="nav-link active" aria-current="page" href="index.html">Home</a>
           		</li>
           		<li class="nav-item">
-            		<a class="nav-link" href="food/index.html">Food</a>
+            		<a class="nav-link " href="food/index.html">Food</a>
           		</li>
           		<li class="nav-item">
             		<a class="nav-link" href="nightlife/index.html" onclick="ageprompt()">Nightlife</a>
@@ -46,6 +46,9 @@
           		</li>
           		<li class="nav-item">
             		<a class="nav-link" href="beauty/index.html">Beauty</a>
+          		</li>
+							<li class="nav-item">
+            		<a class="nav-link" href="contact/index.html">Contact</a>
           		</li>
         		</ul>
 					</div>
@@ -61,7 +64,7 @@
 		  	<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
 			</div>
 				<div class="carousel-inner">
-					<div class="carousel-item active">
+					<div class="carousel-item active carouselcursor">
 						<!--Clicking image sends user to corresponding page-->
 						<a href="food/index.html"><img src="images/wigwam.png" class="d-block w-100" alt="photos of food and drink available at Wigwam"></a>
 							<div class="carousel-caption">
@@ -70,7 +73,7 @@
 	        				<p class="carousel-description">Delicious meals brought to you by some of Brazil's finest chefs.</p>
 							</div>
 					</div>
-					<div class="carousel-item">
+					<div class="carousel-item carouselcursor">
 						<!--Clicking image sends user to corresponding page-->
 						<img src="images/nightlife.png" class="d-block w-100" alt="photo of crowd live music" onclick="ageprompt()">
 							<div class="carousel-caption">
@@ -79,7 +82,7 @@
 									<p class="carousel-description">Whether you're into Funk or Samba, there are lots of places for you to enjoy Brazilian music in Dublin.</p>
 							</div>
 					</div>
-					<div class="carousel-item">
+					<div class="carousel-item carouselcursor">
 						<!--Clicking image sends user to corresponding page-->
 						<a href="sports/index.html"><img src="images/bjj.png" class="d-block w-100" alt="brazilian jiu jitsu class members"></a>
 							<div class="carousel-caption">
@@ -88,7 +91,7 @@
 									<p class="carousel-description">Ever thought about taking up a new activity? Now is your chance to explore some Brazilian sports available here in Dublin!</p>
 							</div>
 					</div>
-					<div class="carousel-item">
+					<div class="carousel-item carouselcursor">
 						<!--Clicking image sends user to corresponding page-->
 						<a href="beauty/index.html"><img src="images/beauty3.png" class="d-block w-100" alt="beauty salon room"></a>
 							<div class="carousel-caption">
@@ -173,7 +176,7 @@
 		<!--Footer-->
 		<footer class="footer bg-light text-center text-lg-start">
 			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2021 Copyright:
+            &copy; Copyright  <script>new Date().getFullYear()>2017&&document.write(+new Date().getFullYear());</script>, From Brazil to Dublin.
     	</div>
   	</footer>
 
