@@ -36,7 +36,7 @@ function clickBeauty(){
   window.open('beauty/index.html');
 }
 
-function clickWigwamWebsite(){
+/*function clickWigwamWebsite(){
   window.open('https://wigwamdublin.com/','_blank');
 }
 
@@ -155,6 +155,7 @@ function clickBelezaWebsite(){
 function clickBelezaLocation(){
   window.open("https://www.google.com/maps/place/Beleza+Pura+by+Camila+Marc/@53.3525263,-6.2665406,17z/data=!3m1!4b1!4m5!3m4!1s0x48670e8287497abb:0xbc18608258c7fe7f!8m2!3d53.3525491!4d-6.2643025",'_blank');
 }
+*/
 
 function nameChecker(){
   var name = document.getElementById("userName").value;
